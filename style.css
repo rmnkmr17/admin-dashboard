@@ -1,8 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
-div {
+body {
+    font-family: "Lato", sans-serif;
+}
+
+svg {
+    ;
+}
+
+input {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(158, 164, 168);
+    width: 70%;
+    height: 50%;
+    color: black;
+}
+
+.grid-container > div {
     background-color: aliceblue;
     border: 1px solid steelblue;
 }
@@ -16,13 +36,75 @@ div {
 }
 
 .sidebar {
+    padding: 20px;
     grid-row: 1 / 4;
+    display: grid;
+    grid-auto-rows: minmax(40px, 50px);
+    justify-items: center;
 }
 
 .header {
     grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    
+    padding: 20px;
 }
 
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: center ;
+    gap: 10px;
+    
+}
+
+#profile-picture {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#profile-picture-2 {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.notification-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+button {
+    border-radius: 15px;
+    background-color: aqua;
+    border: none;
+    padding: 4px 20px;
+    font-size: 20px;
+}
 .your-projects {
     grid-area: 2 / 2 / 4 / 3;
 }

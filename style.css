@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+}
+
+div {
+    background-color: aliceblue;
+    border: 1px solid steelblue;
+}
+
+.grid-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(150px, .8fr) 2fr 1fr;
+    grid-template-rows: .8fr 2fr 2fr;
+    grid-auto-flow: row;
+}
+
+.sidebar {
+    grid-row: 1 / 4;
+}
+
+.header {
+    grid-column: 2 / 4;
+}
+
+.your-projects {
+    grid-area: 2 / 2 / 4 / 3;
+}
+
+.announcements {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.trending {
+    grid-area: 3 / 3 / 3 / 4;
+}

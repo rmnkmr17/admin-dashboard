@@ -16,16 +16,12 @@ svg {
 input {
     border-radius: 10px;
     border: none;
-    background-color: rgb(158, 164, 168);
+    background-color: rgb(209, 220, 228);
     width: 70%;
-    height: 50%;
+    height: 60%;
     color: black;
 }
 
-.grid-container > div {
-    background-color: aliceblue;
-    border: 1px solid steelblue;
-}
 
 .grid-container {
     height: 100vh;
@@ -36,6 +32,8 @@ input {
 }
 
 .sidebar {
+    background-color: #1d4ed8;
+    color: white;
     padding: 20px;
     grid-row: 1 / 4;
     display: grid;
@@ -47,17 +45,18 @@ input {
     grid-column: 2 / 4;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    
-    padding: 20px;
+    background-color: #f0fdfa;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
-
 .search-bar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    align-content: center ;
+    align-content: center;
     gap: 10px;
-    
+
 }
 
 #profile-picture {
@@ -71,7 +70,7 @@ input {
     width: 100px;
     height: 100px;
     margin-right: 10px;
-    
+
 }
 
 .search-bar {
@@ -100,19 +99,84 @@ input {
 
 button {
     border-radius: 15px;
-    background-color: aqua;
+    background-color: #2563eb;
+    color: white;
     border: none;
     padding: 4px 20px;
     font-size: 20px;
 }
+
 .your-projects {
+    background-color: #ccfbf1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
     grid-area: 2 / 2 / 4 / 3;
 }
 
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    border-left: 10px solid sandybrown;
+    -webkit-box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
+    -moz-box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
+    box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+p {
+    color: #4b5563;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+.card-container {
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 300px);
+}
+
 .announcements {
+    background-color: #ccfbf1;
     grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.ann-container p {
+    font-size: 0.8rem;
+}
+
+.first,
+.second {
+    border-bottom: 1px solid rgb(75, 75, 75);
+}
+
+.ann {
+    padding: 10px;
+}
+
+.ann-container {
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
 }
 
 .trending {
+    background-color: #ccfbf1;
     grid-area: 3 / 3 / 3 / 4;
+    padding: 20px;
 }

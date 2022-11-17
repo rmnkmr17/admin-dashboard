@@ -7,14 +7,29 @@
 
 body {
     font-family: "Lato", sans-serif;
+
 }
 
-svg {
-    ;
+.card-container svg:hover {
+    color: red;
+}
+
+.username div:hover {
+    cursor: pointer;
+    color: #64799d;
 }
 
 svg:hover {
     cursor: pointer;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #505e85;
 }
 
 input {
@@ -26,13 +41,17 @@ input {
     color: black;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
 .grid-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: minmax(150px, .8fr) 2fr 1fr;
-    grid-template-rows: .8fr 2fr 2fr;
-    grid-auto-flow: row;
+    grid-template-columns: minmax(200px, .7fr) 2fr 1fr;
+    grid-template-rows: .8fr 2fr 3fr;
+
 }
 
 .sidebar {
@@ -41,8 +60,28 @@ input {
     padding: 20px;
     grid-row: 1 / 4;
     display: grid;
-    grid-auto-rows: minmax(40px, 50px);
-    justify-items: center;
+    grid-auto-rows: 1fr 3.5fr 4.5fr;
+    justify-items: start;
+}
+
+.logo {
+    width: 70%;;
+    font-size: 2rem;
+    display: flex;
+    gap: 10px;
+}
+
+.user-options, .user-settings {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .header {
@@ -54,7 +93,6 @@ input {
     padding-top: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #bdc0c5;
-    
 }
 .search-bar {
     display: grid;
@@ -119,7 +157,7 @@ button {
     flex-direction: column;
     padding: 20px;
     grid-area: 2 / 2 / 4 / 3;
-    align-content: center;
+    align-items: stretch;
 }
 
 .card {
@@ -128,9 +166,9 @@ button {
     color: black;
     background-color: white;
     border-left: 10px solid sandybrown;
-    -webkit-box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
-    -moz-box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
-    box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
+    -moz-box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
+    box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
 }
 
 .icons {
@@ -182,9 +220,9 @@ h4 {
     background-color: white;
     border-radius: 10px;
     width: 80%;
-    -webkit-box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
-    -moz-box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
-    box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
+    -moz-box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
+    box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
 }
 
 .trending {
@@ -200,9 +238,9 @@ h4 {
     background-color: white;
     border-radius: 10px;
     width: 80%;
-    -webkit-box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
-    -moz-box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
-    box-shadow: 1px 4px 32px -6px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
+    -moz-box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
+    box-shadow: 1px 4px 22px -6px rgba(0,0,0,0.33);
 }
 
 .trend {
